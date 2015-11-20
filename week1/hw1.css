@@ -1,0 +1,50 @@
+
+/*
+ * The order of the css is the same as
+ * https://www.coursera.org/learn/introcss/supplement/Z0pee/homework-one-description
+ */
+
+
+/* Style the header with a background color  */
+header{
+    background-color:#95a5a6;
+}
+
+
+/* h1 elements should be centered and have a new font color */
+h1{
+    text-align:center;
+    color:#FFFFFF;
+}
+
+
+/* h2 elements have a new font color */
+h2{
+    color:#2c3e50;
+}
+
+
+/* sections should have a new background color */
+section{
+    background-color:#bdc3c7;
+}
+
+
+/* a elements should be centered and have a new font color and background color */
+a{
+    text-align:center;
+    color:#000000;
+    background-color:#bdc3c7;
+}
+
+
+/* the images should not be on the page */
+img{
+    display:none;
+}
+
+
+/* style headings to have uppercase text */
+h1,h2{
+    text-transform:uppercase;
+}
