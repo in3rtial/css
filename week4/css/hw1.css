@@ -1,4 +1,4 @@
-/* Homework 2 (kept h1.css because html should not be modified)*/
+/* Homework 4 (kept h1.css because html should not be modified)*/
 
 
 
@@ -82,49 +82,87 @@ be centered horizontally, and have vertical (top/bottom) space between them and 
 }
 
 
+
 /* Week 4 specific */
 
-/*
-The table should be styled using at least four properties
 
-    1- The table headings should have a border, background color, and at least one other property
-    2- Style the table so that the text in the first column is left-aligned and the text in the other two columns is centered
-Set the opacity of the table rows to a value between .6 and .8 (make sure it is still visible)
-Change the opacity of a row when it is hovered over
-The table elements <td> should be styled using at least four properties
-*/
-
+/*  TABLE
+    Style at a minimum:
+    - Font - multiple families, size, weight and line-height
+    - Width - don't take up the entire space
+    - Margin - center the table */
 table{
-    margin: 2em;
-    width:90%;
+    font-family:Verdana, Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+    line-height: 2.5em;
+
+    width:80%;
+ 
+    margin:0% 8%;
     text-align:center;
-    
 }
 
 
-/*  Style the table so that the text in the first column is left-aligned and the text in the other two columns is centered */
-table td{
-    background-color:rgba(150, 191, 138, 0.6);
-    padding:5px;
-    line-height:1.8em;
-    border-radius:4px;
+
+/* TABLE HEADING */
+table th{
+    /*  change background color
+        - linear gradient with browser prefixes */
+    background: #5E842C;
+    background: -webkit-linear-gradient(#5E842C, rgba(150, 191, 138, 0.8));
+    background: -o-linear-gradient(#5E842C,, rgba(150, 191, 138, 0.8));
+    background: -moz-linear-gradient(#5E842C,, rgba(150, 191, 138, 0.8));
+    background: linear-gradient(#5E842C,, rgba(150, 191, 138, 0.8));
+
+    /* add a border
+        - round only the top two corner
+        - make the bottom border thicker*/
+    border:2px solid #ccff22;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom:4px solid #ccff22;
+
+    /* add at least one other property */
+    color:#FFFFFF;
+    line-height:3em;
+    font-size:1.2em;
 }
 
-table td:first-child{
+
+
+/* TABLE ROWS
+    - set the opacity to a value of about 0.8
+    - left align the first column, center the other two
+    - set the opacity to a of value of 1 when the element is hovered upon */
+table tr{
+    opacity:0.8;
+}
+
+table tr td:first-child{
     text-align:left;
 }
 
 
-/* Change the opacity of a row when it is hovered over */
 table tr:hover{
-    background-color:rgba(150, 191, 138, 0.8)
+    opacity:1;
 }
 
-/* The table headings should have a border, background color, and at least one other property */
-table th{
-    border:2px solid #ccff22;
-    background-color:#5E842C;
-    color:#FFFFFF;
-    line-height:3em;
+
+
+/*  TD
+    - change the padding, font color, background color and set the border radius to 2px
+    - optional: use text-shadow
+*/
+table td{
+    
+    padding:5px;
+    color: #000001;
+    background-color:rgba(150, 191, 138, 0.6);
+    border-radius:2px;
 }
 
+
+/* text shadow for fun */
+table tr td{
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+}
